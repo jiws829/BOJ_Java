@@ -9,6 +9,10 @@ public class Main {
         String str_trimmed = str.trim();
         String[] splits = str_trimmed.split(" ");
 
-        System.out.println(splits.length);
+        if (splits.length == 1 && splits[0] == "") {
+            System.out.println("0");
+        } else {
+            System.out.println(splits.length);
+        }
     }
 }
